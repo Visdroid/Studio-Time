@@ -1,0 +1,5 @@
+﻿<!-- Jquery Perfect Scroll Bar -->
+@Styles.Render(""~/bundles/jquery/perfect-scrollbar/css")
+
+<!-- Jquery Perfect Scroll Bar -->
+@Scripts.Render("~/bundles/jquery/perfect-scrollbar/js")
