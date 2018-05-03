@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
-    <!--  <link rel="icon" type="image/png" href="images/icons/favicon.png" />
-    <!--===============================================================================================-->
+      <link rel="icon" type="image/png" href="~/images/icons/favicon.png" />
+    <!--===============================================================================================
     @*<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">*@
     <link href="~/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!--===============================================================================================-->
     @*<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">*@
     <link href="~/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
+    @*<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">*@
     <link href="~/fonts/themify/themify-icons.css" rel="stylesheet" />
     <!--===============================================================================================-->
     @*<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">*@
@@ -65,7 +65,7 @@
                 </div>
 
                 <span class="topbar-child1">
-                    Free Delivery for standard order over R200
+                    Free event on album purchase
                 </span>
 
                 <div class="topbar-child2">
@@ -85,7 +85,7 @@
 
             <div class="wrap_header">
                 <!-- Logo -->
-                <a href="index.html" class="logo">
+                <a href="@Url.Action("Index", "Home")" class="logo">
                     @*<img src="images/icons/logo.png*@
                     <img src="~/images/icons/logo.png" alt="IMG-LOGO">
                 </a>
@@ -95,24 +95,44 @@
                     <nav class="menu">
                         <ul class="main_menu">
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="@Url.Action("Index", "Home")">Home</a>
                                 <ul class="sub_menu">
-                                    <li><a href="index.html">Homepage V1</a></li>
+                                    <li><a href="@Url.Action("Index", "Home")">Home</a></li>
                                     <li><a href="home-02.html">Menu</a></li>
                                     <li><a href="home-03.html">Specials</a></li>
                                 </ul>
                             </li>
 
                             <li>
-                                <a href="product.html">Shop</a>
+                                <a href="@Url.Action("Music","Music")">Music</a>
+                                <ul class="sub_menu">
+                                    <li><a href="index.html">Top 100</a></li> 
+                                    <li><a href="home-02.html">Albums</a></li>
+                                    <li><a href="home-03.html">Mixtapes</a></li>
+                                    <li><a href="home-03.html">Singles</a></li>
+                                    <li><a href="home-03.html">Artists</a></li>
+                                    <li><a href="home-03.html">Instrumentals</a></li>
+                                </ul>
                             </li>
 
                             <li class="sale-noti">
-                                <a href="product.html">Specials</a>
+                                <a href="product.html">Events</a>
+                                <ul class="sub_menu">
+                                    <li><a href="index.html">Live Right Now</a></li>
+                                    <li><a href="home-02.html">Scheduled</a></li>
+                                    <li><a href="home-03.html">Recent Events</a></li>
+                                   
+                                </ul>
                             </li>
 
                             <li>
-                                <a href="cart.html">Features</a>
+                                <a href="cart.html">Products</a>
+                                <ul class="sub_menu">
+                                    <li><a href="index.html">Equipment</a></li>
+                                    <li><a href="home-02.html">Samples and sounds</a></li>
+                                    <li><a href="home-03.html">Engineering Services</a></li>
+
+                                </ul>
                             </li>
 
                             <li>
@@ -155,11 +175,11 @@
 
                                     <div class="header-cart-item-txt">
                                         <a href="#" class="header-cart-item-name">
-                                            Shisanyama Pap,gravy and Pork
+                                            Playazbeats - The Mist
                                         </a>
 
                                         <span class="header-cart-item-info">
-                                            1 x R28.00
+                                            1 x 128.00
                                         </span>
                                     </div>
                                 </li>
@@ -172,11 +192,11 @@
 
                                     <div class="header-cart-item-txt">
                                         <a href="#" class="header-cart-item-name">
-                                            Kasi Style Bunny Chow
+                                           J Cole - KOD
                                         </a>
 
                                         <span class="header-cart-item-info">
-                                            1 x R25.00
+                                            1 x R142.00
                                         </span>
                                     </div>
                                 </li>
@@ -189,18 +209,18 @@
 
                                     <div class="header-cart-item-txt">
                                         <a href="#" class="header-cart-item-name">
-                                            Beef Stew
+                                           King - Kimberly Rise
                                         </a>
 
                                         <span class="header-cart-item-info">
-                                            1 x R33.00
+                                            1 x R133.00
                                         </span>
                                     </div>
                                 </li>
                             </ul>
 
                             <div class="header-cart-total">
-                                Total: R86.00
+                                Total: R403.00
                             </div>
 
                             <div class="header-cart-buttons">
@@ -259,11 +279,11 @@
 
                                     <div class="header-cart-item-txt">
                                         <a href="#" class="header-cart-item-name">
-                                           Pizza
+                                          Mixtapes
                                         </a>
 
                                         <span class="header-cart-item-info">
-                                            1 x R82.00
+                                         The Latest Releases by artists on the site
                                         </span>
                                     </div>
                                 </li>
@@ -276,11 +296,11 @@
 
                                     <div class="header-cart-item-txt">
                                         <a href="#" class="header-cart-item-name">
-                                           Wings and chips
+                                         Aka - Supermega
                                         </a>
 
                                         <span class="header-cart-item-info">
-                                            1 x R44.00
+                                            1 x R84.00
                                         </span>
                                     </div>
                                 </li>
@@ -293,7 +313,7 @@
 
                                     <div class="header-cart-item-txt">
                                         <a href="#" class="header-cart-item-name">
-                                           Wings and Drumstick combo
+                                           Youngsta CPT - Die Wes-Kaap
                                         </a>
 
                                         <span class="header-cart-item-info">
@@ -304,7 +324,7 @@
                             </ul>
 
                             <div class="header-cart-total">
-                                Total: R211.00
+                                Total: R169.00
                             </div>
 
                             <div class="header-cart-buttons">
@@ -340,7 +360,7 @@
                 <ul class="main-menu">
                     <li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
                         <span class="topbar-child1">
-                            Free Delivery standard order over R100
+                            Free Mixtape standard purchase over R100
                         </span>
                     </li>
 
@@ -416,59 +436,97 @@
                 <div class="item-slick1 item1-slick1" style="background-image:url('../images/master-slide-02.jpg');">
                     <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
                         <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
-                            Breakfast Collection 2018
+                            #1 Isonic - House after dark
                         </span>
 
                         <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
-                            New Specials
+                            Top 100 Charts
                         </h2>
 
                         <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
                             <!-- Button -->
                             <a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
-                                Order Now
+                                Purchase Now
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="item-slick1 item2-slick1" style="background-image:url('../images/master-slide-03.jpg');">
+                <div class="item-slick1 item1-slick1" style="background-image:url('../images/master-slide-02.jpg');">
                     <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-                        <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rollIn">
-                            Drumstick Combo 2018
+                        <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
+                            #1 Brenny - Study Break
                         </span>
 
-                        <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
-                            New Specials
+                        <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="fadeInUp">  
+                            Albums
                         </h2>
 
-                        <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
+                        <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
                             <!-- Button -->
                             <a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
-                                Order Now
+                                Purchase Now
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="item-slick1 item3-slick1" style="background-image:url('../images/master-slide-04.jpg');">
+                <div class="item-slick1 item1-slick1" style="background-image:url('../images/master-slide-02.jpg');">
                     <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-                        <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rotateInDownLeft">
-                            Wing Combo 
+                        <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
+                            #1 PlayazBeats - LeftOvers
                         </span>
 
-                        <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="rotateInUpRight">
-                            New Specials
+                        <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
+                            Instrumentals
                         </h2>
 
-                        <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="rotateIn">
+                        <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
                             <!-- Button -->
                             <a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
-                                Order Now
+                                Purchase Now
                             </a>
                         </div>
                     </div>
                 </div>
+
+                @*<div class="item-slick1 item2-slick1" style="background-image:url('../images/master-slide-03.jpg');">*@
+                @*<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">*@
+                @*<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rollIn">
+            Albums
+        </span>*@
+
+                @*<h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
+           #1 Brenny - Study Break
+        </h2>*@
+
+                @*<div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">*@
+                <!-- Button -->
+                @*<a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">*@
+                @*Purchase Now*@
+                @*</a>*@
+                @*</div>*@
+                @*</div>*@
+                @*</div>*@
+
+                @*<div class="item-slick1 item3-slick1" style="background-image:url('../images/master-slide-04.jpg');">*@
+                @*<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">*@
+                @*<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rotateInDownLeft">
+          Instrumentals
+        </span>*@
+
+                @*<h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="rotateInUpRight">
+           #1 Playazbeats - LeftOvers
+        </h2>*@
+
+                @*<div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="rotateIn">*@
+                <!-- Button -->
+                @*<a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+            Purchase Now
+        </a>*@
+                @*</div>*@
+                @*</div>*@
+                @*</div>*@
 
             </div>
         </div>
@@ -477,6 +535,11 @@
     <!-- Banner -->
     <section class="banner bgwhite p-t-40 p-b-40">
         <div class="container">
+            <div class="sec-title p-b-60">
+                <h3 class="m-text5 t-center">
+                    Music Genres
+                </h3>
+            </div>
             <div class="row">
                 <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
                     <!-- block1 -->
@@ -487,7 +550,7 @@
                         <div class="block1-wrapbtn w-size2">
                             <!-- Button -->
                             <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                                Fish and Chips
+                                House
                             </a>
                         </div>
                     </div>
@@ -500,7 +563,7 @@
                         <div class="block1-wrapbtn w-size2">
                             <!-- Button -->
                             <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                                Pap Wors
+                                Hip Hop
                             </a>
                         </div>
                     </div>
@@ -515,7 +578,7 @@
                         <div class="block1-wrapbtn w-size2">
                             <!-- Button -->
                             <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                                Pap and Chicken
+                                R N B
                             </a>
                         </div>
                     </div>
@@ -528,7 +591,7 @@
                         <div class="block1-wrapbtn w-size2">
                             <!-- Button -->
                             <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                               Gatsby
+                                Traditional
                             </a>
                         </div>
                     </div>
@@ -543,7 +606,7 @@
                         <div class="block1-wrapbtn w-size2">
                             <!-- Button -->
                             <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                                Fish and Hake
+                                Jazz
                             </a>
                         </div>
                     </div>
@@ -555,11 +618,11 @@
 
                         <div class="block2-content sizefull ab-t-l flex-col-c-m">
                             <h4 class="m-text4 t-center w-size3 p-b-8">
-                                Sign up & get 20% off
+                                Sign up & get 20% off all Music
                             </h4>
 
                             <p class="t-center w-size4">
-                                Be the frist to know about the latest fashion news and get exclu-sive offers
+                                Be the frist to know about the latest Music news and events and get exclu-sive offers
                             </p>
 
                             <div class="w-size2 p-t-25">
@@ -612,11 +675,11 @@
 
                             <div class="block2-txt p-t-20">
                                 <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                    Herschel supply co 25l
+                                    Condenser Microphone 
                                 </a>
 
                                 <span class="block2-price m-text6 p-r-5">
-                                    $75.00
+                                   R4 500.00
                                 </span>
                             </div>
                         </div>
@@ -646,11 +709,11 @@
 
                             <div class="block2-txt p-t-20">
                                 <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                    Denim jacket blue
+                                    88 Keys Midi Piano
                                 </a>
 
                                 <span class="block2-price m-text6 p-r-5">
-                                    $92.50
+                                   R3 800.00
                                 </span>
                             </div>
                         </div>
@@ -679,11 +742,11 @@
 
                             <div class="block2-txt p-t-20">
                                 <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                    Coach slim easton black
+                                  Sound Card
                                 </a>
 
                                 <span class="block2-price m-text6 p-r-5">
-                                    $165.90
+                                    R3 400.00
                                 </span>
                             </div>
                         </div>
@@ -712,15 +775,15 @@
 
                             <div class="block2-txt p-t-20">
                                 <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                    Frayed denim shorts
+                                    Studio Monitors
                                 </a>
 
                                 <span class="block2-oldprice m-text7 p-r-5">
-                                    $29.50
+                                    R7 600.00
                                 </span>
 
                                 <span class="block2-newprice m-text8 p-r-5">
-                                    $15.90
+                                    R4 150.00
                                 </span>
                             </div>
                         </div>
@@ -749,11 +812,11 @@
 
                             <div class="block2-txt p-t-20">
                                 <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                    Herschel supply co 25l
+                                   Performance Microphone
                                 </a>
 
                                 <span class="block2-price m-text6 p-r-5">
-                                    $75.00
+                                   R230.00
                                 </span>
                             </div>
                         </div>
@@ -782,11 +845,11 @@
 
                             <div class="block2-txt p-t-20">
                                 <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                    Denim jacket blue
+                                    Audio Mastering Mixer
                                 </a>
 
                                 <span class="block2-price m-text6 p-r-5">
-                                    $92.50
+                                    R5 122.50
                                 </span>
                             </div>
                         </div>
@@ -815,11 +878,11 @@
 
                             <div class="block2-txt p-t-20">
                                 <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                    Coach slim easton black
+                                    HD PC Modintor
                                 </a>
 
                                 <span class="block2-price m-text6 p-r-5">
-                                    $165.90
+                                    R3 165.90
                                 </span>
                             </div>
                         </div>
@@ -848,15 +911,15 @@
 
                             <div class="block2-txt p-t-20">
                                 <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                    Frayed denim shorts
+                                   Asus 64-bit Laptop
                                 </a>
 
                                 <span class="block2-oldprice m-text7 p-r-5">
-                                    $29.50
+                                    R8 230.50
                                 </span>
 
                                 <span class="block2-newprice m-text8 p-r-5">
-                                    $15.90
+                                    R4 515.90
                                 </span>
                             </div>
                         </div>
@@ -877,7 +940,7 @@
 
                         <div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
                             <span class="m-text9 p-t-45 fs-20-sm">
-                                The Beauty
+                                Top Events
                             </span>
 
                             <h3 class="l-text1 fs-35-sm">
@@ -885,7 +948,7 @@
                             </h3>
 
                             <a href="#" class="s-text4 hov2 p-t-20 ">
-                                View Collection
+                                View Events
                             </a>
                         </div>
                     </div>
@@ -898,22 +961,22 @@
                         <div class="ab-t-l sizefull flex-col-c-b p-l-15 p-r-15 p-b-20">
                             <div class="t-center">
                                 <a href="product-detail.html" class="dis-block s-text3 p-b-5">
-                                    Gafas sol Hawkers one
+                                    Isonic - House after dark
                                 </a>
 
                                 <span class="block2-oldprice m-text7 p-r-5">
-                                    $29.50
+                                    R129.50
                                 </span>
 
                                 <span class="block2-newprice m-text8">
-                                    $15.90
+                                    R68.90
                                 </span>
                             </div>
 
                             <div class="flex-c-m p-t-44 p-t-30-xl">
                                 <div class="flex-col-c-m size3 bo1 m-l-5 m-r-5">
                                     <span class="m-text10 p-b-1 days">
-                                        69
+                                        0
                                     </span>
 
                                     <span class="s-text5">
@@ -923,7 +986,7 @@
 
                                 <div class="flex-col-c-m size3 bo1 m-l-5 m-r-5">
                                     <span class="m-text10 p-b-1 hours">
-                                        04
+                                        02
                                     </span>
 
                                     <span class="s-text5">
@@ -964,7 +1027,7 @@
         <div class="container">
             <div class="sec-title p-b-52">
                 <h3 class="m-text5 t-center">
-                    Our Blog
+                    Upcoming Events
                 </h3>
             </div>
 
@@ -979,12 +1042,12 @@
                         <div class="block3-txt p-t-14">
                             <h4 class="p-b-7">
                                 <a href="blog-detail.html" class="m-text11">
-                                    Black Friday Guide: Best Sales & Discount Codes
+                                    Isonic Live mix
                                 </a>
                             </h4>
 
-                            <span class="s-text6">By</span> <span class="s-text7">Nancy Ward</span>
-                            <span class="s-text6">on</span> <span class="s-text7">July 22, 2017</span>
+                            <span class="s-text6">By</span> <span class="s-text7">Isonic</span>
+                            <span class="s-text6">on</span> <span class="s-text7">April 02, 2018</span>
 
                             <p class="s-text8 p-t-16">
                                 Duis ut velit gravida nibh bibendum commodo. Sus-pendisse pellentesque mattis augue id euismod. Inter-dum et malesuada fames
@@ -1003,12 +1066,12 @@
                         <div class="block3-txt p-t-14">
                             <h4 class="p-b-7">
                                 <a href="blog-detail.html" class="m-text11">
-                                    The White Sneakers Nearly Every Fashion Girls Own
+                                  Upington Battle Rap
                                 </a>
                             </h4>
 
-                            <span class="s-text6">By</span> <span class="s-text7">Nancy Ward</span>
-                            <span class="s-text6">on</span> <span class="s-text7">July 18, 2017</span>
+                            <span class="s-text6">By</span> <span class="s-text7">Aldrin Visser</span>
+                            <span class="s-text6">on</span> <span class="s-text7">May 05, 2018</span>
 
                             <p class="s-text8 p-t-16">
                                 Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit ame
@@ -1027,12 +1090,12 @@
                         <div class="block3-txt p-t-14">
                             <h4 class="p-b-7">
                                 <a href="blog-detail.html" class="m-text11">
-                                    New York SS 2018 Street Style: Annina Mislin
+                                    Bloemfontein: Street Cypher
                                 </a>
                             </h4>
 
-                            <span class="s-text6">By</span> <span class="s-text7">Nancy Ward</span>
-                            <span class="s-text6">on</span> <span class="s-text7">July 2, 2017</span>
+                            <span class="s-text6">By</span> <span class="s-text7">PlayazBeats</span>
+                            <span class="s-text6">on</span> <span class="s-text7">June 12, 2018</span>
 
                             <p class="s-text8 p-t-16">
                                 Proin nec vehicula lorem, a efficitur ex. Nam vehicula nulla vel erat tincidunt, sed hendrerit ligula porttitor. Fusce sit amet maximus nunc
@@ -1170,7 +1233,7 @@
         <div class="flex-w p-l-15 p-r-15">
             <div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1">
                 <h4 class="m-text12 t-center">
-                    Free Delivery Worldwide
+                    Free Equipment Delivery
                 </h4>
 
                 <a href="#" class="s-text11 t-center">
@@ -1211,7 +1274,7 @@
 
                 <div>
                     <p class="s-text7 w-size27">
-                        Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879
+                        Any questions? Let us know in store at Willow Ridge, 35 King Edward St, Bloemfontein, 9300 or call us on (+27) 078 574 3931
                     </p>
 
                     <div class="flex-m p-t-30">
@@ -1232,25 +1295,25 @@
                 <ul>
                     <li class="p-b-9">
                         <a href="#" class="s-text7">
-                            Men
+                            All Music
                         </a>
                     </li>
 
                     <li class="p-b-9">
                         <a href="#" class="s-text7">
-                            Women
+                            Production
                         </a>
                     </li>
 
                     <li class="p-b-9">
                         <a href="#" class="s-text7">
-                            Dresses
+                            Events
                         </a>
                     </li>
 
                     <li class="p-b-9">
                         <a href="#" class="s-text7">
-                            Sunglasses
+                           Equipment
                         </a>
                     </li>
                 </ul>
@@ -1296,7 +1359,7 @@
                 <ul>
                     <li class="p-b-9">
                         <a href="#" class="s-text7">
-                            Track Order
+                            Track Purchase
                         </a>
                     </li>
 
@@ -1308,7 +1371,7 @@
 
                     <li class="p-b-9">
                         <a href="#" class="s-text7">
-                            Shipping
+                            Delivery
                         </a>
                     </li>
 

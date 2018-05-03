@@ -206,6 +206,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MusicController.cs" />
     <Compile Include="Controllers\SweetController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -3120,6 +3121,7 @@
     <Content Include="vendor\slick\slick-theme.scss" />
     <Content Include="vendor\slick\slick.less" />
     <Content Include="vendor\slick\slick.scss" />
+    <Content Include="Views\Music\Music.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
