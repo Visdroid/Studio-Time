@@ -65,12 +65,12 @@
                 </div>
 
                 <span class="topbar-child1">
-                    Free event on album purchase
+                    Free delivery on purchase
                 </span>
 
                 <div class="topbar-child2">
                     <span class="topbar-email">
-                        fashe@example.com
+                        hightide@gmail.com
                     </span>
 
                     <div class="topbar-language rs1-select2">
@@ -87,7 +87,7 @@
                 <!-- Logo -->
                 <a href="@Url.Action("Index", "Home")" class="logo">
                     @*<img src="images/icons/logo.png*@
-                    <img src="~/images/icons/logo.png" alt="IMG-LOGO">
+                    <img src="~/images/hightide.png" alt="IMG-LOGO">
                 </a>
 
                 <!-- Menu -->
@@ -104,33 +104,35 @@
                             </li>
 
                             <li>
-                                <a href="@Url.Action("Music","Music")">Music</a>
+                                <a href="@Url.Action("Music","Music")">Menu</a>
                                 <ul class="sub_menu">
-                                    <li><a href="index.html">Top 100</a></li> 
-                                    <li><a href="home-02.html">Albums</a></li>
-                                    <li><a href="home-03.html">Mixtapes</a></li>
-                                    <li><a href="home-03.html">Singles</a></li>
+                                    <li><a href="index.html">Breakfast</a></li>
+                                    <li><a href="home-02.html">Lunch</a></li>
+                                    <li><a href="home-03.html">Supper</a></li>
+                                    @*<li><a href="home-03.html">Singles</a></li>
                                     <li><a href="home-03.html">Artists</a></li>
-                                    <li><a href="home-03.html">Instrumentals</a></li>
+                                    <li><a href="home-03.html">Instrumentals</a></li>*@
                                 </ul>
                             </li>
 
-                            <li class="sale-noti">
-                                <a href="product.html">Events</a>
-                                <ul class="sub_menu">
-                                    <li><a href="index.html">Live Right Now</a></li>
-                                    <li><a href="home-02.html">Scheduled</a></li>
-                                    <li><a href="home-03.html">Recent Events</a></li>
-                                   
-                                </ul>
-                            </li>
+                            
+
+                            @*<li class="sale-noti">
+            <a href="product.html">Events</a>
+            <ul class="sub_menu">
+                <li><a href="index.html">Live Right Now</a></li>
+                <li><a href="home-02.html">Scheduled</a></li>
+                <li><a href="home-03.html">Recent Events</a></li>
+
+            </ul>
+        </li>*@
 
                             <li>
-                                <a href="cart.html">Products</a>
+                                <a href="@Url.Action("Product", "Purchase")">Orders</a>
                                 <ul class="sub_menu">
-                                    <li><a href="index.html">Equipment</a></li>
-                                    <li><a href="home-02.html">Samples and sounds</a></li>
-                                    <li><a href="home-03.html">Engineering Services</a></li>
+                                    <li><a href="index.html">Track Order</a></li>
+                                    <li><a href="home-02.html">Previous Orders</a></li>
+                                    @*<li><a href="home-03.html">Engineering Services</a></li>*@
 
                                 </ul>
                             </li>
@@ -170,12 +172,12 @@
                                 <li class="header-cart-item">
                                     <div class="header-cart-item-img">
                                         @*<img src="images/item-cart-01.jpg"*@
-                                        <img src="~/images/item-cart-01.jpg"  alt="IMG">
+                                        <img src="~/images/legwengya.jpg"  alt="IMG">
                                     </div>
 
                                     <div class="header-cart-item-txt">
                                         <a href="#" class="header-cart-item-name">
-                                            Playazbeats - The Mist
+                                           Legwenya
                                         </a>
 
                                         <span class="header-cart-item-info">
@@ -187,16 +189,16 @@
                                 <li class="header-cart-item">
                                     <div class="header-cart-item-img">
                                         @*<img src="images/item-cart-02.jpg"*@
-                                        <img src="~/images/item-cart-02.jpg"  alt="IMG">
+                                        <img src="~/images/diretlo.jpg"  alt="IMG">
                                     </div>
 
                                     <div class="header-cart-item-txt">
                                         <a href="#" class="header-cart-item-name">
-                                           J Cole - KOD
+                                           Diretlo
                                         </a>
 
                                         <span class="header-cart-item-info">
-                                            1 x R142.00
+                                            1 x R38.00
                                         </span>
                                     </div>
                                 </li>
@@ -204,29 +206,30 @@
                                 <li class="header-cart-item">
                                     <div class="header-cart-item-img">
                                         @*<img src="images/item-cart-03.jpg*@
-                                        <img src="~/images/item-cart-03.jpg"  alt="IMG">
+                                        <img src="~/images/Sekhambane.jpg"  alt="IMG">
                                     </div>
 
                                     <div class="header-cart-item-txt">
                                         <a href="#" class="header-cart-item-name">
-                                           King - Kimberly Rise
+                                          Sekhambane
                                         </a>
 
                                         <span class="header-cart-item-info">
-                                            1 x R133.00
+                                            1 x R22.00
                                         </span>
                                     </div>
                                 </li>
                             </ul>
 
                             <div class="header-cart-total">
-                                Total: R403.00
+                                Total: R58.00
                             </div>
 
                             <div class="header-cart-buttons">
                                 <div class="header-cart-wrapbtn">
                                     <!-- Button -->
-                                    <a href="cart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+                                    <a href="@Url.Action("Map", "Map")" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+                                        @*<a href="">Orders</a>*@
                                         View Cart
                                     </a>
                                 </div>
@@ -274,16 +277,16 @@
                                 <li class="header-cart-item">
                                     <div class="header-cart-item-img">
                                         @*<img src="images/item-cart-01.jpg*@
-                                        <img src="~/images/item-cart-01.jpg" alt="IMG">
+                                        <img src="~/images/dumplings.jpg" alt="IMG">
                                     </div>
 
                                     <div class="header-cart-item-txt">
                                         <a href="#" class="header-cart-item-name">
-                                          Mixtapes
+                                          Dombol
                                         </a>
 
                                         <span class="header-cart-item-info">
-                                         The Latest Releases by artists on the site
+                                         Orders
                                         </span>
                                     </div>
                                 </li>
@@ -291,16 +294,17 @@
                                 <li class="header-cart-item">
                                     <div class="header-cart-item-img">
                                         @*<img src="images/item-cart-02.jpg"*@
-                                        <img src="~/images/item-cart-02.jpg"  alt="IMG">
+                                        <img src="~/images/sekhambane.jpg" alt="IMG" />
+                                        @*<img src="~/images/se.jpg" alt="IMG">*@
                                     </div>
 
                                     <div class="header-cart-item-txt">
                                         <a href="#" class="header-cart-item-name">
-                                         Aka - Supermega
+                                         Sekhambane
                                         </a>
 
                                         <span class="header-cart-item-info">
-                                            1 x R84.00
+                                            1 x R16.00
                                         </span>
                                     </div>
                                 </li>
@@ -308,16 +312,16 @@
                                 <li class="header-cart-item">
                                     <div class="header-cart-item-img">
                                         @*<img src="images/item-cart-03.jpg"*@
-                                        <img src="~/images/item-cart-03.jpg" alt="IMG">
+                                        <img src="~/images/diretlo.jpg" alt="IMG">
                                     </div>
 
                                     <div class="header-cart-item-txt">
                                         <a href="#" class="header-cart-item-name">
-                                           Youngsta CPT - Die Wes-Kaap
+                                           Diretlo
                                         </a>
 
                                         <span class="header-cart-item-info">
-                                            1 x R85.00
+                                            1 x R44.00
                                         </span>
                                     </div>
                                 </li>
@@ -360,7 +364,7 @@
                 <ul class="main-menu">
                     <li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
                         <span class="topbar-child1">
-                            Free Mixtape standard purchase over R100
+                            Free legwenya,purchase over R100
                         </span>
                     </li>
 
@@ -433,14 +437,14 @@
     <section class="slide1">
         <div class="wrap-slick1">
             <div class="slick1">
-                <div class="item-slick1 item1-slick1" style="background-image:url('../images/master-slide-02.jpg');">
+                <div class="item-slick1 item1-slick1" style="background-image:url('../images/shisanyama.jpg');">
                     <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
                         <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
-                            #1 Isonic - House after dark
+                            Shisanyama
                         </span>
 
                         <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
-                            Top 100 Charts
+                            Today's Specials
                         </h2>
 
                         <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
@@ -452,14 +456,14 @@
                     </div>
                 </div>
 
-                <div class="item-slick1 item1-slick1" style="background-image:url('../images/master-slide-02.jpg');">
+                <div class="item-slick1 item1-slick1" style="background-image:url('../images/beefstew.jpg');">
                     <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
                         <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
-                            #1 Brenny - Study Break
+                            Beef Stew
                         </span>
 
                         <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="fadeInUp">  
-                            Albums
+                            Pap
                         </h2>
 
                         <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
@@ -471,14 +475,14 @@
                     </div>
                 </div>
 
-                <div class="item-slick1 item1-slick1" style="background-image:url('../images/master-slide-02.jpg');">
+                <div class="item-slick1 item1-slick1" style="background-image:url('../images/chickenstew3.jpg');">
                     <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
                         <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
-                            #1 PlayazBeats - LeftOvers
+                            Chicken Stew
                         </span>
 
                         <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
-                            Instrumentals
+                            Pap
                         </h2>
 
                         <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
@@ -537,7 +541,7 @@
         <div class="container">
             <div class="sec-title p-b-60">
                 <h3 class="m-text5 t-center">
-                    Music Genres
+                    Menu
                 </h3>
             </div>
             <div class="row">
@@ -545,12 +549,12 @@
                     <!-- block1 -->
                     <div class="block1 hov-img-zoom pos-relative m-b-30">
                         @*<img src="images/banner-02.jpg"*@
-                        <img src="~/images/banner-02.jpg" alt="IMG-BENNER">
+                        <img src="~/images/chakalaka.jpg" alt="IMG-BENNER">
 
                         <div class="block1-wrapbtn w-size2">
                             <!-- Button -->
                             <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                                House
+                                Chakalaka
                             </a>
                         </div>
                     </div>
@@ -558,12 +562,12 @@
                     <!-- block1 -->
                     <div class="block1 hov-img-zoom pos-relative m-b-30">
                         @*<img src="images/banner-05.jpg*@
-                        <img src="~/images/banner-05.jpg" alt="IMG-BENNER">
+                        <img src="~/images/afval.jpg" alt="IMG-BENNER">
 
                         <div class="block1-wrapbtn w-size2">
                             <!-- Button -->
                             <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                                Hip Hop
+                               Diretlo
                             </a>
                         </div>
                     </div>
@@ -573,12 +577,12 @@
                     <!-- block1 -->
                     <div class="block1 hov-img-zoom pos-relative m-b-30">
                         @*<img src="images/banner-03.jpg"*@
-                        <img src="~/images/banner-03.jpg" alt="IMG-BENNER">
+                        <img src="~/images/afval2.jpg" alt="IMG-BENNER">
 
                         <div class="block1-wrapbtn w-size2">
                             <!-- Button -->
                             <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                                R N B
+                                Tlhogo
                             </a>
                         </div>
                     </div>
@@ -586,12 +590,12 @@
                     <!-- block1 -->
                     <div class="block1 hov-img-zoom pos-relative m-b-30">
                         @*<img src="images/banner-07.jpg*@
-                        <img src="~/images/banner-07.jpg" alt="IMG-BENNER">
+                        <img src="~/images/runaway.jpg" alt="IMG-BENNER">
 
                         <div class="block1-wrapbtn w-size2">
                             <!-- Button -->
                             <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                                Traditional
+                                Menoto
                             </a>
                         </div>
                     </div>
@@ -601,12 +605,12 @@
                     <!-- block1 -->
                     <div class="block1 hov-img-zoom pos-relative m-b-30">
                         @*<img src="images/banner-04.jpg*@
-                        <img src="~/images/banner-04.jpg" alt="IMG-BENNER">
+                        <img src="~/images/dumplings2.jpg" alt="IMG-BENNER">
 
                         <div class="block1-wrapbtn w-size2">
                             <!-- Button -->
                             <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                                Jazz
+                               Dombol
                             </a>
                         </div>
                     </div>
@@ -618,11 +622,11 @@
 
                         <div class="block2-content sizefull ab-t-l flex-col-c-m">
                             <h4 class="m-text4 t-center w-size3 p-b-8">
-                                Sign up & get 20% off all Music
+                                Purchase now and get free delivery
                             </h4>
 
                             <p class="t-center w-size4">
-                                Be the frist to know about the latest Music news and events and get exclu-sive offers
+                                Be the frist to know about the latest Specials and Products and get exclu-sive offers
                             </p>
 
                             <div class="w-size2 p-t-25">
@@ -656,7 +660,7 @@
                         <div class="block2">
                             <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
                                 @*<img src="images/item-02.jpg"*@
-                                <img src="~/images/item-02.jpg" alt="IMG-PRODUCT">
+                                <img src="~/images/diretlo.jpg" alt="IMG-PRODUCT">
 
                                 <div class="block2-overlay trans-0-4">
                                     <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -675,11 +679,11 @@
 
                             <div class="block2-txt p-t-20">
                                 <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                    Condenser Microphone 
+                                    Papa Ka Diretlo
                                 </a>
 
                                 <span class="block2-price m-text6 p-r-5">
-                                   R4 500.00
+                                   R35.00
                                 </span>
                             </div>
                         </div>
@@ -690,7 +694,7 @@
                         <div class="block2">
                             <div class="block2-img wrap-pic-w of-hidden pos-relative">
                                 @*<img src="images/item-03.jpg"*@
-                                <img src="~/images/item-03.jpg" alt="IMG-PRODUCT">
+                                <img src="~/images/dumplings2.jpg" alt="IMG-PRODUCT">
 
                                 <div class="block2-overlay trans-0-4">
                                     <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -709,11 +713,11 @@
 
                             <div class="block2-txt p-t-20">
                                 <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                    88 Keys Midi Piano
+                                    Dombol ka Diretlo
                                 </a>
 
                                 <span class="block2-price m-text6 p-r-5">
-                                   R3 800.00
+                                   R33.00
                                 </span>
                             </div>
                         </div>
@@ -723,7 +727,7 @@
                         <!-- Block2 -->
                         <div class="block2">
                             <div class="block2-img wrap-pic-w of-hidden pos-relative">
-                                <img src="~/images/item-05.jpg" alt="IMG-PRODUCT">
+                                <img src="~/images/milies.jpg" alt="IMG-PRODUCT">
 
                                 <div class="block2-overlay trans-0-4">
                                     <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -742,11 +746,11 @@
 
                             <div class="block2-txt p-t-20">
                                 <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                  Sound Card
+                                  Mielies
                                 </a>
 
                                 <span class="block2-price m-text6 p-r-5">
-                                    R3 400.00
+                                    R7.00
                                 </span>
                             </div>
                         </div>
@@ -756,7 +760,7 @@
                         <!-- Block2 -->
                         <div class="block2">
                             <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
-                                <img src="~/images/item-07.jpg" alt="IMG-PRODUCT">
+                                <img src="~/images/mogodu.jpg" alt="IMG-PRODUCT">
 
                                 <div class="block2-overlay trans-0-4">
                                     <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -775,15 +779,15 @@
 
                             <div class="block2-txt p-t-20">
                                 <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                    Studio Monitors
+                                  Mogodu
                                 </a>
 
                                 <span class="block2-oldprice m-text7 p-r-5">
-                                    R7 600.00
+                                    R44.00
                                 </span>
 
                                 <span class="block2-newprice m-text8 p-r-5">
-                                    R4 150.00
+                                    R32.00
                                 </span>
                             </div>
                         </div>
@@ -793,7 +797,7 @@
                         <!-- Block2 -->
                         <div class="block2">
                             <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-                                <img src="~/images/item-02.jpg" alt="IMG-PRODUCT">
+                                <img src="~/images/chickenliver.jpg" alt="IMG-PRODUCT">
 
                                 <div class="block2-overlay trans-0-4">
                                     <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -812,11 +816,11 @@
 
                             <div class="block2-txt p-t-20">
                                 <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                   Performance Microphone
+                                   Chicken Livers
                                 </a>
 
                                 <span class="block2-price m-text6 p-r-5">
-                                   R230.00
+                                   R23.00
                                 </span>
                             </div>
                         </div>
@@ -826,7 +830,7 @@
                         <!-- Block2 -->
                         <div class="block2">
                             <div class="block2-img wrap-pic-w of-hidden pos-relative">
-                                <img src="~/images/item-03.jpg" alt="IMG-PRODUCT">
+                                <img src="~/images/runaway.jpg" alt="IMG-PRODUCT">
 
                                 <div class="block2-overlay trans-0-4">
                                     <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -845,11 +849,11 @@
 
                             <div class="block2-txt p-t-20">
                                 <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                    Audio Mastering Mixer
+                                   Perry Perry Menoto
                                 </a>
 
                                 <span class="block2-price m-text6 p-r-5">
-                                    R5 122.50
+                                    R11.50
                                 </span>
                             </div>
                         </div>
@@ -878,11 +882,11 @@
 
                             <div class="block2-txt p-t-20">
                                 <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                    HD PC Modintor
+                                    Stamp ka Diretlo
                                 </a>
 
                                 <span class="block2-price m-text6 p-r-5">
-                                    R3 165.90
+                                    R31.90
                                 </span>
                             </div>
                         </div>
@@ -911,11 +915,11 @@
 
                             <div class="block2-txt p-t-20">
                                 <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                   Asus 64-bit Laptop
+                                   Sekhambane
                                 </a>
 
                                 <span class="block2-oldprice m-text7 p-r-5">
-                                    R8 230.50
+                                    R15.50
                                 </span>
 
                                 <span class="block2-newprice m-text8 p-r-5">
@@ -936,11 +940,11 @@
             <div class="row">
                 <div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15">
                     <div class="hov-img-zoom pos-relative">
-                        <img src="~/images/banner-08.jpg" alt="IMG-BANNER">
+                        <img src="~/images/chakalaka.jpg" alt="IMG-BANNER">
 
                         <div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
                             <span class="m-text9 p-t-45 fs-20-sm">
-                                Top Events
+                                Top Products
                             </span>
 
                             <h3 class="l-text1 fs-35-sm">
@@ -948,7 +952,7 @@
                             </h3>
 
                             <a href="#" class="s-text4 hov2 p-t-20 ">
-                                View Events
+                                View Orders
                             </a>
                         </div>
                     </div>
@@ -956,20 +960,20 @@
 
                 <div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15">
                     <div class="bgwhite hov-img-zoom pos-relative p-b-20per-ssm">
-                        <img src="~/images/shop-item-09.jpg" alt="IMG-BANNER">
+                        <img src="~/images/diretlo.jpg" alt="IMG-BANNER">
 
                         <div class="ab-t-l sizefull flex-col-c-b p-l-15 p-r-15 p-b-20">
                             <div class="t-center">
                                 <a href="product-detail.html" class="dis-block s-text3 p-b-5">
-                                    Isonic - House after dark
+                                    Papa Ka Diretlo
                                 </a>
 
                                 <span class="block2-oldprice m-text7 p-r-5">
-                                    R129.50
+                                    R33.50
                                 </span>
 
                                 <span class="block2-newprice m-text8">
-                                    R68.90
+                                    R21.90
                                 </span>
                             </div>
 
@@ -1023,7 +1027,7 @@
 
 
     <!-- Blog -->
-    <section class="blog bgwhite p-t-94 p-b-65">
+    @*<section class="blog bgwhite p-t-94 p-b-65">
         <div class="container">
             <div class="sec-title p-b-52">
                 <h3 class="m-text5 t-center">
@@ -1105,7 +1109,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>*@
 
     <!-- Instagram -->
     <section class="instagram p-t-20">
@@ -1233,7 +1237,7 @@
         <div class="flex-w p-l-15 p-r-15">
             <div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1">
                 <h4 class="m-text12 t-center">
-                    Free Equipment Delivery
+                    Free Delivery
                 </h4>
 
                 <a href="#" class="s-text11 t-center">
@@ -1243,11 +1247,11 @@
 
             <div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 bo2 respon2">
                 <h4 class="m-text12 t-center">
-                    30 Days Return
+                    No refunds
                 </h4>
 
                 <span class="s-text11 t-center">
-                    Simply return it within 30 days for an exchange.
+                    Comment on our blog
                 </span>
             </div>
 
@@ -1295,19 +1299,19 @@
                 <ul>
                     <li class="p-b-9">
                         <a href="#" class="s-text7">
-                            All Music
+                           Menu
                         </a>
                     </li>
 
                     <li class="p-b-9">
                         <a href="#" class="s-text7">
-                            Production
+                            Specials
                         </a>
                     </li>
 
                     <li class="p-b-9">
                         <a href="#" class="s-text7">
-                            Events
+                            Breakfast
                         </a>
                     </li>
 
@@ -1359,7 +1363,7 @@
                 <ul>
                     <li class="p-b-9">
                         <a href="#" class="s-text7">
-                            Track Purchase
+                            Track Order
                         </a>
                     </li>
 

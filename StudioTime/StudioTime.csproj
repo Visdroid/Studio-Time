@@ -206,11 +206,14 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MapController.cs" />
     <Compile Include="Controllers\MusicController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\SweetController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -2696,6 +2699,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="images\afval.jpg" />
+    <Content Include="images\afval2.jpg" />
     <Content Include="images\banner-01.jpg" />
     <Content Include="images\banner-02.jpg" />
     <Content Include="images\banner-03.jpg" />
@@ -2710,6 +2715,7 @@
     <Content Include="images\banner-12.jpg" />
     <Content Include="images\banner-13.jpg" />
     <Content Include="images\banner-14.jpg" />
+    <Content Include="images\beefstew.jpg" />
     <Content Include="images\bg-banner-01.jpg" />
     <Content Include="images\bg-banner-02.jpg" />
     <Content Include="images\bg-video-01.jpg" />
@@ -2723,6 +2729,15 @@
     <Content Include="images\blog-08.jpg" />
     <Content Include="images\blog-09.jpg" />
     <Content Include="images\blog-10.jpg" />
+    <Content Include="images\chakalaka.jpg" />
+    <Content Include="images\chickenliver.jpg" />
+    <Content Include="images\chickenstew.jpg" />
+    <Content Include="images\chickenstew2.jpg" />
+    <Content Include="images\chickenstew3.jpg" />
+    <Content Include="images\diretlo.jpg" />
+    <Content Include="images\download2.jpg" />
+    <Content Include="images\dumplings.jpg" />
+    <Content Include="images\dumplings2.jpg" />
     <Content Include="images\gallery-01.jpg" />
     <Content Include="images\gallery-02.jpg" />
     <Content Include="images\gallery-03.jpg" />
@@ -2744,6 +2759,8 @@
     <Content Include="images\heading-pages-04.jpg" />
     <Content Include="images\heading-pages-05.jpg" />
     <Content Include="images\heading-pages-06.jpg" />
+    <Content Include="images\hightide.png" />
+    <Content Include="images\hotdog.jpg" />
     <Content Include="images\icons\bg-01.jpg" />
     <Content Include="images\icons\discover.png" />
     <Content Include="images\icons\express.png" />
@@ -2779,6 +2796,8 @@
     <Content Include="images\item-cart-04.jpg" />
     <Content Include="images\item-cart-05.jpg" />
     <Content Include="images\item-cart-06.jpg" />
+    <Content Include="images\legwengya.jpg" />
+    <Content Include="images\legwenya2.jpg" />
     <Content Include="images\master-slide-01.jpg" />
     <Content Include="images\master-slide-02.jpg" />
     <Content Include="images\master-slide-03.jpg" />
@@ -2787,9 +2806,16 @@
     <Content Include="images\master-slide-06.jpg" />
     <Content Include="images\master-slide-07.jpg" />
     <Content Include="images\master-slide-08.jpg" />
+    <Content Include="images\milies.jpg" />
+    <Content Include="images\mogodu.jpg" />
+    <Content Include="images\papakanama.jpg" />
     <Content Include="images\product-detail-01.jpg" />
     <Content Include="images\product-detail-02.jpg" />
     <Content Include="images\product-detail-03.jpg" />
+    <Content Include="images\runaway.jpg" />
+    <Content Include="images\samoosa.jpg" />
+    <Content Include="images\sekhambane.jpg" />
+    <Content Include="images\shisanyama.jpg" />
     <Content Include="images\shop-item-09.jpg" />
     <Content Include="images\thumb-item-01.jpg" />
     <Content Include="images\thumb-item-02.jpg" />
@@ -3122,6 +3148,8 @@
     <Content Include="vendor\slick\slick.less" />
     <Content Include="vendor\slick\slick.scss" />
     <Content Include="Views\Music\Music.cshtml" />
+    <Content Include="Views\Product\Product.cshtml" />
+    <Content Include="Views\Map\Map.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
