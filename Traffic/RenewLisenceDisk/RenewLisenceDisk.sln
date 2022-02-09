@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenewLisenceDisk", "RenewLisenceDisk\RenewLisenceDisk.csproj", "{2C689C72-C105-43F8-88C6-0D12DB13E983}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C689C72-C105-43F8-88C6-0D12DB13E983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C689C72-C105-43F8-88C6-0D12DB13E983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C689C72-C105-43F8-88C6-0D12DB13E983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C689C72-C105-43F8-88C6-0D12DB13E983}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9CBA93EB-1729-4BF8-9013-88DD8EB37B5A}
+	EndGlobalSection
+EndGlobal
